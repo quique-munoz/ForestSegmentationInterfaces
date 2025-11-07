@@ -66,7 +66,7 @@ colcon build --packages-select forest_segmentation_interfaces
 source install/setup.bash
 ````
 
-Comprueba que la acción está registrada:
+Comprobar que la acción está registrada:
 
 ```bash
 ros2 interface show forest_segmentation_interfaces/action/TakeSnapshot
@@ -76,8 +76,8 @@ ros2 interface show forest_segmentation_interfaces/action/TakeSnapshot
 
 ## 🔧 Uso básico (pruebas)
 
-> Necesitas tener corriendo un **Action Server** que implemente `TakeSnapshot`
-> (por ejemplo, tu nodo `snapshot_saver_action` del paquete de aplicación).
+> Tener corriendo un **Action Server** que implemente `TakeSnapshot`
+> (por ejemplo, nodo `snapshot_saver_action` del paquete de aplicación).
 
 Enviar un *goal* desde la CLI:
 
