@@ -1,0 +1,18 @@
+# Goal
+float32 sync_slop_sec   # tolerancia de sincronización, p.ej. 0.05
+bool require_caminfo    # si true, no dispara hasta recibir CameraInfo
+
+---
+# Result
+bool success
+string error
+string output_dir
+string basename         # base timestamp (sin extensión)
+string image_path
+string points_path
+string gps_path
+string tf_path
+
+---
+# Feedback
+string state            # mensajes de progreso: "waiting_caminfo", "syncing", "saving", ...
