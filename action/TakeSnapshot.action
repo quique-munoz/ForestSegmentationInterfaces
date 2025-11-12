@@ -1,6 +1,10 @@
 # Goal
 float32 sync_slop_sec   # tolerancia de sincronización, p.ej. 0.05
-bool require_caminfo    # si true, no dispara hasta recibir CameraInfo
+float32 timeout_sec
+bool require_caminfo    
+bool require_image
+bool require_gps
+bool require_lidar
 
 ---
 # Result
